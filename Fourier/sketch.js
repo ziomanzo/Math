@@ -6,6 +6,8 @@ let wave = [];
 
 let slider;
 
+// the slider let you increase or decrease the number of waves
+// n = 1 = Sin wave
 
 
   function setup() {   //create canvas and slider
