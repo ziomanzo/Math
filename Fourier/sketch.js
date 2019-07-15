@@ -8,7 +8,7 @@ let slider;
 
 
 
-  function setup() {
+  function setup() {   //create canvas and slider
         createCanvas(600, 400);
         slider = createSlider(1, 10, 5);
       }
@@ -19,7 +19,7 @@ let slider;
   function draw() {
 
         background(0);
-        translate(150, 200);
+        translate(150, 200); //position circle
 
         let x = 0;
         let y = 0;
@@ -30,11 +30,11 @@ let slider;
 
                 let n = i * 2 + 1;
 
-                let radius = 50 * (4 / (n * PI));  //set radius
+                let radius = 70 * (4 / (n * PI));  //set radius
                 x += radius * cos(n * time);
                 y += radius * sin(n * time);
 
-                stroke(255, 100);
+                stroke(255, 100);  //fill (draw) circles
                 noFill();
                 ellipse(prevx, prevy, radius * 2);
 
@@ -58,7 +58,7 @@ let slider;
 
         endShape();
 
-        time += 0.05;
+        time += 0.03;  // speed
 
         if (wave.length > 250) {
           wave.pop();
