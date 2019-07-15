@@ -8,7 +8,7 @@ let slider;
 
 // the slider let you increase or decrease the number of circles
 // n = 1 = Sin wave
-//
+
 
 
   function setup() {   //create canvas and slider
@@ -44,7 +44,7 @@ let slider;
                 //fill radius lines
                 stroke(255);
                 line(prevx, prevy, x, y);  // horizontal line from the Dot at the end of the radius to a point to start drawing
-              
+
         }
 
           wave.unshift(y);     //unshift instead of push to always add from the beginning of the array
