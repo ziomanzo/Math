@@ -6,14 +6,15 @@ let wave = [];  // init an array for every point in the wave
 
 let slider;
 
-// the slider let you increase or decrease the number of circles
+// the slider let you increase or decrease the number of circles [or waves to add]
 // n = 1 = Sin wave
 
 
 
   function setup() {   //create canvas and slider
-        createCanvas(600, 400);
+
         slider = createSlider(1, 15, 4);  //  init the slider from n=1 to n=15 + starting value 4
+        createCanvas(600, 400);
       }
 
 
